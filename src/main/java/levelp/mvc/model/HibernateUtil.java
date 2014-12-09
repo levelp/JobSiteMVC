@@ -3,14 +3,6 @@ package levelp.mvc.model;
 /**
  * Created by darya on 09/12/14.
  */
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
-import org.hibernate.ejb.Ejb3Configuration;
-
-import java.io.File;
-
 public class HibernateUtil {
  /*   private static final SessionFactory sessionFactory = buildSessionFactory();
 
@@ -36,7 +28,7 @@ public class HibernateUtil {
         getSessionFactory().close();
     }*/
 
-    public static final Log logger = LogFactory.getLog(HibernateUtil.class
+/*    public static final Log logger = LogFactory.getLog(HibernateUtil.class
             .getName());
 
     private static final SessionFactory sessionFactory;
@@ -63,5 +55,5 @@ public class HibernateUtil {
     public static Ejb3Configuration getEjb3Configuration() {
         return ejb3Configuration;
     }
-
+*/
 }

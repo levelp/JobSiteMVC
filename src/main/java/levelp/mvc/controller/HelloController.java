@@ -1,4 +1,4 @@
-package levelp.mvc;
+package levelp.mvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
