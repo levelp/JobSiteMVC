@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+      <!-- протокол://сервер:порт/база_данных -->
+      <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/jobsite_test</property>
+      <!-- Имя пользователя для подключения к БД -->
+      <property name="hibernate.connection.username">postgres</property>
+      <!-- Пароль пользователя -->
+      <property name="hibernate.connection.password">admin</property>
+
+      <property name="connection_pool_size">1</property>
+
+      <!--
+        validate - проверка
+        update - обновление схемы
+        create - пересоздание схемы (с потерей данных)
+        create-drop - удаление схемы по окончании работы с БД
+      -->
+      <property name="hbm2ddl.auto">update</property>
+
+      <!-- Показывать ли все выполняемые SQL-запросы -->
+      <property name="show_sql">true</property>
+
+      <mapping class="levelp.mvc.model.User"></mapping>
+  </session-factory>
+</hibernate-configuration>
