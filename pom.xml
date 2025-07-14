@@ -8,7 +8,7 @@
     <name>Job Site MVC</name>
 
     <properties>
-        <spring.version>6.2.3</spring.version>
+        <spring.version>6.2.8</spring.version>
     </properties>
 
     <dependencies>
